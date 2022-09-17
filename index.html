@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content>
+<meta name="description" content="Minesweeper game">
+<meta content name="keywords">
+<meta name="theme-color" content="#2d2c2c">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+<meta property="og:url" content="http://127.0.0.1:34767/">
+<meta property="og:title" content="Minesweeper">
+<meta property="og:description" content="Minesweeper game">
+<meta property="og:type" content="website">
+<meta content property="og:image">
+<title>
+Minesweeper
+</title>
+<link rel="icon" type="image/png" href="https://storage.googleapis.com/murlok-github/icon-192.png">
+<link rel="apple-touch-icon" href="https://storage.googleapis.com/murlok-github/icon-192.png">
+<link rel="manifest" href="/minesweeper/manifest.webmanifest">
+<link type="text/css" rel="stylesheet" href="/minesweeper/app.css">
+<script defer="true" src="/minesweeper/wasm_exec.js"></script>
+<script defer="true" src="/minesweeper/app.js"></script>
+<link rel="stylesheet" href="/minesweeper/web/css/bootstrap.min.css" type="text/css">
+<link type="text/css" rel="stylesheet" href="/minesweeper/web/css/main.css">
+<script defer="true" src="/minesweeper/web/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+<aside id="app-wasm-loader" class="goapp-app-info">
+<img src="https://storage.googleapis.com/murlok-github/icon-192.png" id="app-wasm-loader-icon" class="goapp-logo goapp-spin">
+<p id="app-wasm-loader-label" class="goapp-label">
+0%
+</p>
+</aside>
+<div id="app-pre-render">
+<main class="container-fluid app-main">
+<div class="row text-center mt-3">
+<div class="col-4">
+<button class="btn btn-info">
+Easy
+</button>
+</div>
+<div class="col-4">
+<button class="btn btn-warning">
+Medium
+</button>
+</div>
+<div class="col-4">
+<button class="btn btn-danger">
+Hard
+</button>
+</div>
+</div>
+<div class="row text-center mt-5 mb-5">
+<div class="app-table">
+<div class="app-row">
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+</div>
+<div class="app-row">
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+</div>
+<div class="app-row">
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+</div>
+<div class="app-row">
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+</div>
+<div class="app-row">
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+</div>
+<div class="app-row">
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+</div>
+<div class="app-row">
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+</div>
+<div class="app-row">
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+</div>
+<div class="app-row">
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+</div>
+<div class="app-row">
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+<div class="app-cell">
+<div class="app-cell-content"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row text-center">
+<div class="fs-1">
+
+</div>
+<div class="fs-2">
+00:00
+</div>
+<div class="fs-3">
+0/16
+</div>
+</div>
+</main>
+</div>
+</div>
+</body>
+</html>

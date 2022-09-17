@@ -28,14 +28,16 @@ func main() {
 			"/web/img/flag.svg",
 			"/web/img/mine.svg",
 		},
-		//Resources: app.GitHubPages("minesweeper"),
+		//Resources: app.GitHubPages("minesweeper"), // uncomment for Github Pages generation
 	}
 	http.Handle("/", handler)
 
+	// uncomment for Github Pages generation
 	//err := app.GenerateStaticWebsite("", handler)
 	//if err != nil {
 	//	log.Fatal(err)
 	//}
+	//return
 
 	if err := http.ListenAndServe(":8000", nil); err != nil {
 		log.Fatal(err)
