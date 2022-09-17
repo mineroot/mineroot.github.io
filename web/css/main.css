@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.app-main {
+    width: 1524px;
+}
+
+.app-table {
+    display: block;
+}
+
+.app-row {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+.app-cell {
+    display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    background: #BABDB6;
+    cursor: pointer;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.app-cell:not(.app-cell-revealed):hover {
+    background: #D3D7CF;
+}
+
+.app-cell-revealed {
+    cursor: default;
+}
+
+.app-cell-content {
+    color: #2E3436;
+    font-weight: bold;
+    height: 38px;
+    width: 38px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    font-family: monospace;
+    font-size: 28px;
+}
+
+.app-cell-content img {
+    vertical-align: initial;
+}
+
+.app-cell-neighborhoods-0 {
+    background: #DEDEDC;
+}
+
+.app-cell-neighborhoods-1 {
+    background: #DDFAC3;
+}
+
+.app-cell-neighborhoods-2 {
+    background: #ECEDBF;
+}
+
+.app-cell-neighborhoods-3 {
+    background: #EDDAB4;
+}
+
+.app-cell-neighborhoods-4 {
+    background: #EDC38A;
+}
+
+.app-cell-neighborhoods-5 {
+    background: #F7A1A2;
+}
+
+.app-cell-neighborhoods-6 {
+    background: #FEA785;
+}
+
+.app-cell-neighborhoods-7 {
+    background: #FF7D60;
+}
+
+.app-cell-neighborhoods-8 {
+    background: #FF323C;
+}
+
+.app-cell-exploded {
+    background: #C41E3A;
+}
+
