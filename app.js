@@ -5,7 +5,7 @@ var goappNav = function () {};
 var goappOnUpdate = function () {};
 var goappOnAppInstallChange = function () {};
 
-const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"/minesweeper","GOAPP_STATIC_RESOURCES_URL":"/minesweeper","GOAPP_VERSION":"4d9d48d1f6e787c66fa8f99ae315b7c8e51abe88"};
+const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"","GOAPP_STATIC_RESOURCES_URL":"","GOAPP_VERSION":"4f806d354eedd952d052caa313d9917e78c98f3f"};
 const goappLoadingLabel = "{progress}%";
 const goappWasmContentLengthHeader = "";
 
@@ -24,7 +24,7 @@ async function goappInitServiceWorker() {
   if ("serviceWorker" in navigator) {
     try {
       const registration = await navigator.serviceWorker.register(
-        "/minesweeper/app-worker.js"
+        "/app-worker.js"
       );
 
       goappServiceWorkerRegistration = registration;
@@ -214,7 +214,7 @@ async function goappInitWebAssembly() {
 
     const go = new Go();
     const wasm = await instantiateStreaming(
-      fetchWithProgress("/minesweeper/web/app.wasm", showProgress),
+      fetchWithProgress("/web/app.wasm", showProgress),
       go.importObject
     );
 

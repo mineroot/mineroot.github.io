@@ -1,8 +1,8 @@
-const cacheName = "app-" + "4d9d48d1f6e787c66fa8f99ae315b7c8e51abe88";
-const resourcesToCache = ["/minesweeper","/minesweeper/app.css","/minesweeper/app.js","/minesweeper/manifest.webmanifest","/minesweeper/wasm_exec.js","/minesweeper/web/app.wasm","/minesweeper/web/css/bootstrap.min.css","/minesweeper/web/css/main.css","/minesweeper/web/img/flag.svg","/minesweeper/web/img/mine.svg","/minesweeper/web/js/bootstrap.min.js","https://storage.googleapis.com/murlok-github/icon-192.png","https://storage.googleapis.com/murlok-github/icon-512.png"];
+const cacheName = "app-" + "4f806d354eedd952d052caa313d9917e78c98f3f";
+const resourcesToCache = ["/","/app.css","/app.js","/manifest.webmanifest","/wasm_exec.js","/web/app.wasm","/web/css/bootstrap.min.css","/web/css/main.css","/web/img/flag.svg","/web/img/mine.svg","/web/js/bootstrap.min.js","https://storage.googleapis.com/murlok-github/icon-192.png","https://storage.googleapis.com/murlok-github/icon-512.png"];
 
 self.addEventListener("install", (event) => {
-  console.log("installing app worker 4d9d48d1f6e787c66fa8f99ae315b7c8e51abe88");
+  console.log("installing app worker 4f806d354eedd952d052caa313d9917e78c98f3f");
 
   event.waitUntil(
     caches
@@ -28,7 +28,7 @@ self.addEventListener("activate", (event) => {
       );
     })
   );
-  console.log("app worker 4d9d48d1f6e787c66fa8f99ae315b7c8e51abe88 is activated");
+  console.log("app worker 4f806d354eedd952d052caa313d9917e78c98f3f is activated");
 });
 
 self.addEventListener("fetch", (event) => {

@@ -28,7 +28,6 @@ func main() {
 			"/web/img/flag.svg",
 			"/web/img/mine.svg",
 		},
-		//Resources: app.GitHubPages("minesweeper"), // uncomment for Github Pages generation
 	}
 	http.Handle("/", handler)
 
